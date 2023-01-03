@@ -1,0 +1,36 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "sourceMaps": "inline",
+      "retainLines": true,
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": false
+          }
+        ]
+      ],
+      "plugins": [
+        "@babel/plugin-syntax-top-level-await",
+        ["@babel/plugin-proposal-decorators", {
+          "version": "2022-03"
+        }]
+      ]
+    }
+  },
+  "plugins": [
+    "@babel/plugin-syntax-top-level-await",
+    ["@babel/plugin-proposal-decorators", {
+      "version": "2022-03"
+    }]
+  ]
+}
